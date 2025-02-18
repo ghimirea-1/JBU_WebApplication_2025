@@ -1,7 +1,7 @@
 # JBU_WebApplication_2025
 events planner and organizer
 
-### **Step 1: Explain Work Division Simply**  
+### Step 1: Explain Work Division Simply
 Tell Miriam:  
 - "I'll handle the **backend** (database, system logic, and Club Events module)."  
 - "You handle the **frontend** (UI design, Party Events module, and documentation)."  
