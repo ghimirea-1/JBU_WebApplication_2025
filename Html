@@ -1,34 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Manager</title>
+    <title>Event Organizer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        input[type="date"], input[type="number"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
 </head>
 <body>
-    <h2>Event Organizer</h2>
-    <form id="eventForm">
-        <label>Event Name:</label>
-        <input type="text" id="eventName" required>
+    <div>
+        <h2>Event Organizer</h2>
+        <form id="eForm">
+            <label for="eName">Event Name:</label>
+            <input type="text" id="eName" required>
 
-        <label>Event Type:</label>
-        <select id="eventType">
-            <option value="party">Party</option>
-            <option value="club">Club Event</option>
-        </select>
+            <label for="eType">Event Type:</label>
+            <select id="eType">
+                <option value="party">Party Event</option>
+                <option value="club">Club Event</option>
+            </select>
 
-        <label>Date:</label>
-        <input type="date" id="eventDate" required>
+            <label for="eDate">Date:</label>
+            <input type="date" id="eDate" required>
 
-        <label>Expenses:</label>
-        <input type="number" id="eventExpenses" required>
+            <label for="eExpenses">Expenses:</label>
+            <input type="number" id="eExpenses" required>
 
-        <label>Venue:</label>
-        <input type="text" id="eventVenue" required>
+            <label for="eVenue">Venue:</label>
+            <input type="text" id="eVenue" required>
 
-        <button type="submit">Create Event</button>
-    </form>
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>
