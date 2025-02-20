@@ -121,3 +121,4 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
 
 Addition:
 - length of till when the event is
+- send invitaiton
