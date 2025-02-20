@@ -117,4 +117,7 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
 ### **Step 3: Divide the Work Each Week**  
 - Work together on setup in **Week 1**  
 - Assign specific coding tasks weekly, so neither of you gets overloaded  
-- Hold quick check-ins (e.g., twice a week) to stay on track  
+- Hold quick check-ins (e.g., twice a week) to stay on track
+
+Addition:
+- length of till when the event is
