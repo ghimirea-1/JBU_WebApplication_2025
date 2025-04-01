@@ -122,8 +122,8 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
 
             <label for="eType">Event Type:</label>
             <select id="eType">
-                <option value="party">Party Event</option>
                 <option value="club">Club Event</option>
+                <option value="other event">Other Event</option>
             </select>
 
             <label for="eDate">Date:</label>
@@ -201,6 +201,7 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
     </script>
 </body>
 </html>
+
 
 #### **Preview 3 – April 29 (Final Version Ready)**  
 ✅ Complete debugging, improve UI, and optimize features  
