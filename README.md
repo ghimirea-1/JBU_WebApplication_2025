@@ -105,6 +105,102 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
 ✅ Backend should handle event creation, storage, and retrieval  
 ✅ Frontend should display events and let users add details  
 ✅ Connect frontend and backend for basic functionality  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div>
+        <h2>Event Organizer</h2>
+        <form id="eForm">
+            <label for="eName">Event Name:</label>
+            <input type="text" id="eName" required>
+
+            <label for="eType">Event Type:</label>
+            <select id="eType">
+                <option value="party">Party Event</option>
+                <option value="club">Club Event</option>
+            </select>
+
+            <label for="eDate">Date:</label>
+            <input type="date" id="eDate" required>
+
+            <label for="eTime">Time:</label>
+            <input type="time" id="eTime" required>
+
+            <label for="eExpenses">Expenses:</label>
+            <input type="number" id="eExpenses" required>
+
+            <label for="eLocation">Location:</label>
+            <input type="text" id="eLocation" required>
+
+            <label for="eDescription">Event Description:</label>
+            <textarea id="eDescription" rows="4" placeholder="Describe your event..."></textarea>
+
+            <label for="eOrganizer">Organizer Name:</label>
+            <input type="text" id="eOrganizer" required>
+
+            <label for="eGuestList">Upload Guest List (Optional):</label>
+            <input type="file" id="eGuestList" accept=".csv">
+
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
+
+    <div id="eventSummary" style="display:none;">
+        <h3>Event Summary</h3>
+        <p><strong>Event Name:</strong> <span id="summaryEName"></span></p>
+        <p><strong>Event Type:</strong> <span id="summaryEType"></span></p>
+        <p><strong>Date:</strong> <span id="summaryEDate"></span></p>
+        <p><strong>Time:</strong> <span id="summaryETime"></span></p>
+        <p><strong>Expenses:</strong> <span id="summaryEExpenses"></span></p>
+        <p><strong>Venue:</strong> <span id="summaryEVenue"></span></p>
+        <p><strong>Description:</strong> <span id="summaryEDescription"></span></p>
+        <p><strong>Organizer:</strong> <span id="summaryEOrganizer"></span></p>
+        <p><strong>Guest List:</strong> <span id="summaryEGuestList"></span></p>
+    </div>
+
+    <script src="json.js"></script>
+    <script>
+        document.getElementById('eForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Get values from form inputs
+            const eventName = document.getElementById('eName').value;
+            const eventType = document.getElementById('eType').value;
+            const eventDate = document.getElementById('eDate').value;
+            const eventTime = document.getElementById('eTime').value;
+            const eventExpenses = document.getElementById('eExpenses').value;
+            const eventVenue = document.getElementById('eVenue').value;
+            const eventDescription = document.getElementById('eDescription').value;
+            const eventOrganizer = document.getElementById('eOrganizer').value;
+            const guestListFile = document.getElementById('eGuestList').files[0];
+
+            // Optional: Process guest list file (if needed)
+            let guestList = guestListFile ? guestListFile.name : "No guest list uploaded";
+
+            // Display event summary
+            document.getElementById('summaryEName').textContent = eventName;
+            document.getElementById('summaryEType').textContent = eventType;
+            document.getElementById('summaryEDate').textContent = eventDate;
+            document.getElementById('summaryETime').textContent = eventTime;
+            document.getElementById('summaryEExpenses').textContent = `$${eventExpenses}`;
+            document.getElementById('summaryEVenue').textContent = eventVenue;
+            document.getElementById('summaryEDescription').textContent = eventDescription;
+            document.getElementById('summaryEOrganizer').textContent = eventOrganizer;
+            document.getElementById('summaryEGuestList').textContent = guestList;
+
+            // Hide the form and show the summary
+            document.getElementById('eForm').style.display = 'none';
+            document.getElementById('eventSummary').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
 
 #### **Preview 3 – April 29 (Final Version Ready)**  
 ✅ Complete debugging, improve UI, and optimize features  
