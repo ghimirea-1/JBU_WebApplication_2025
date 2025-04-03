@@ -105,6 +105,10 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
 ✅ Backend should handle event creation, storage, and retrieval  
 ✅ Frontend should display events and let users add details  
 ✅ Connect frontend and backend for basic functionality  
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -201,6 +205,9 @@ If your project is built using **HTML, CSS, and JavaScript**, it will look like 
     </script>
 </body>
 </html>
+
+
+
 
 
 #### **Preview 3 – April 29 (Final Version Ready)**  
