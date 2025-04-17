@@ -289,15 +289,15 @@
         <div class="past-events-gallery">
             <!-- Past Event Photo 1 -->
             <div class="past-event-photo">
-                <img src="past-event1.png" alt="Past Event 1">
+                <img src="past-event1.jpg" alt="Past Event 1">
             </div>
             <!-- Past Event Photo 2 -->
             <div class="past-event-photo">
-                <img src="past-event2.png" alt="Past Event 2">
+                <img src="past-event2.jpg" alt="Past Event 2">
             </div>
             <!-- Past Event Photo 3 -->
             <div class="past-event-photo">
-                <img src="past-event3.png" alt="Past Event 3">
+                <img src="past-event3.jpg" alt="Past Event 3">
             </div>
         </div>
     </section>
