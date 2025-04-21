@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fun University Events & Club</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>University Fun Events & Club</h1>
+        <p>Bringing Students Together Through Exciting Events!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#create">Create an Event</a>
+        <a href="#events">Upcoming Events</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+
+        <div class="search-bar">
+            <input type="text" id="eventSearch" placeholder="Search..." onkeyup="searchEvents()" />
+            <button onclick="searchEvents()">Search</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Fun Event Planning!</h2>
+        <p>We organize the best events for university students! From parties to educational events, we offer something for everyone. Join us for the most memorable university experiences!</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-list" id="eventsList">
+            <div class="event" data-event="kickoff-party">
+                <img src="images/party.jpg" alt="Event 1" />
+                <h3>Club Kick-Off Party</h3>
+                <p>Get to know fellow students, enjoy music, and kick off the semester with a bang! Free snacks and drinks available.</p>
+                <p><strong>Date:</strong> April 15, 2025</p>
+                <p><strong>Location:</strong> University Hall</p>
+            </div>
+            <div class="event" data-event="open-mic">
+                <img src="images/micc.jpg" alt="Event 2" />
+                <h3>Open Mic Night</h3>
+                <p>Show off your talent! Whether it's singing, poetry, or comedy, come and share your passion with us.</p>
+                <p><strong>Date:</strong> April 22, 2025</p>
+                <p><strong>Location:</strong> Campus Café</p>
+            </div>
+            <div class="event" data-event="charity-run">
+                <img src="images/sportsflag.jpg" alt="Event 3" />
+                <h3>Charity Run</h3>
+                <p>Join us for a fun run around campus to raise money for local charities. Walk, jog, or run—just have fun and help a great cause!</p>
+                <p><strong>Date:</strong> April 30, 2025</p>
+                <p><strong>Location:</strong> University Track</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="past-events" id="past-events">
+        <h2>Past Events</h2>
+        <div class="past-events-gallery">
+            <div class="past-event-photo">
+                <img src="images/past1.jpg" alt="Past Event 1" />
+            </div>
+            <div class="past-event-photo">
+                <img src="images/past2.jpg" alt="Past Event 2" />
+            </div>
+            <div class="past-event-photo">
+                <img src="images/past3.jpg" alt="Past Event 3" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get involved, don't hesitate to reach out. We'd love to hear from you!</p>
+
+        <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Fun University Events & Club | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
