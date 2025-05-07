@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Details</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="container mx-auto p-4">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h1 id="welcomeMessage" class="text-2xl font-bold mb-4 text-blue-700"></h1>
+
+      <div class="space-y-3 text-lg">
+        <p><strong>Event Title:</strong> <span id="eventTitle"></span></p>
+        <p><strong>Description:</strong> <span id="eventDescription"></span></p>
+        <p><strong>Date & Time:</strong> <span id="eventDate"></span></p>
+        <p><strong>Estimated Expenses:</strong> <span id="eventExpenses"></span></p>
+        <p><strong>Location:</strong> <span id="eventLocation"></span></p>
+        <p><strong>Organized By:</strong> <span id="eventOrganizer"></span></p>
+        <p><strong>Created By:</strong> <span id="eventCreator"></span></p>
+      </div>
+
+      <button onclick="goBack()" class="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+        Back to Planner
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function getQueryParam(name) {
+      return new URLSearchParams(window.location.search).get(name);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = getQueryParam('title');
+      const description = getQueryParam('description');
+      const date = getQueryParam('date');
+      const expenses = getQueryParam('expenses');
+      const location = getQueryParam('location');
+      const organizer = getQueryParam('organizer');
+      const creator = getQueryParam('creator');
+
+      document.getElementById('eventTitle').textContent = title || 'N/A';
+      document.getElementById('eventDescription').textContent = description || 'N/A';
+      document.getElementById('eventDate').textContent = date || 'N/A';
+      document.getElementById('eventExpenses').textContent = expenses || 'N/A';
+      document.getElementById('eventLocation').textContent = location || 'N/A';
+      document.getElementById('eventOrganizer').textContent = organizer || 'N/A';
+      document.getElementById('eventCreator').textContent = creator || 'Guest';
+
+      document.getElementById('welcomeMessage').textContent = `Welcome, ${creator || 'Guest'}! Here are your event details.`;
+    });
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
