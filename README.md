@@ -1,5 +1,38 @@
 https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor
 
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-list" id="eventsList">
+            <!-- Event 1 -->
+            <div class="event" data-event="kickoff-party">
+                <img src="https://media.istockphoto.com/id/1125716911/vector/party-popper-with-confetti.jpg?s=612x612&w=0&k=20&c=sAyofM-MQ5TL-pLyFseV9Vke_W2zyYX1btP90oGJQZE=" alt="Event 1">
+                <h3>Club Kick-Off Party</h3>
+                <p>Get to know fellow students, enjoy music, and kick off the semester with a bang! Free snacks and drinks available.</p>
+                <p><strong>Date:</strong> April 15, 2026</p>
+                <p><strong>Location:</strong> University Hall</p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event" data-event="open-mic">
+                <img src="https://cdn.creazilla.com/cliparts/33447/microphone-clipart-xl.png" alt="Event 2">
+                <h3>Open Mic Night</h3>
+                <p>Show off your talent! Whether it's singing, poetry, or comedy, come and share your passion with us.</p>
+                <p><strong>Date:</strong> April 22, 2026</p>
+                <p><strong>Location:</strong> Campus Café</p>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event" data-event="charity-run">
+                <img src="https://media.istockphoto.com/id/1151187641/vector/red-flag-icon.jpg?s=612x612&w=0&k=20&c=TZdiR3nWkzz7jpmfXZRIx8gt4vPV66hP-JUBIw7euTg=" alt="Event 3">
+                <h3>Charity Run</h3>
+                <p>Join us for a fun run around campus to raise money for local charities. Walk, jog, or run—just have fun and help a great cause!</p>
+                <p><strong>Date:</strong> April 30, 2026</p>
+                <p><strong>Location:</strong> University Track</p>
+            </div>
+        </div>
+    </section>
+    
 
 # JBU_WebApplication_2025
 events planner and organizer
